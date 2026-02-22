@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Fosbil</title>
+    <meta name="description" content="Send us the email at fosbil.fosbil@gmail.com. You can also call us at - 9696334657">
+    <meta name="keywords" content="contact fosbil, fosbil contact">
+    <meta name="robots" content="index, follow">
+    <meta name="Author" content="Mukesh Chaurasia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libstyle-main.css">
+    <link rel="icon" type="image/x-icon" href="Images/library-logo.png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="homepage.html">
+            <img src="Images/library-logo.png" alt="Fosbil Logo" title="Fosbil Logo" width="130" height="130">
+        </a>
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="libraryver1.html">Version 1</a>
+        <a href="libraryver2.html">Version 2</a>
+        <a href="contact.html">Contact</a>
+        <a href="demo.html">Demo</a>
+    </nav>
+</header>
+
+<main>
+  <section>
+    <h1>Contact Us</h1>
+    <h2>Have a question, an idea, or just want to say hello?</h2>
+    <p>At Fosbil, we believe the best solutions start with a simple conversation.<br>
+      Whether you’re looking for technical support, exploring a partnership, or curious about our services, our team is ready to help.
+    </p>
+      <form>
+
+          <fieldset>
+              <p>Your form progress</p> <!-- Make this progress bar interactive that fills up as the user keep filling data -->
+             <progress value="10" max="100"></progress>
+          </fieldset>
+
+          <fieldset>
+              <legend><h2>Your Data</h2></legend>
+              <label for="title">Title</label>
+              <input list="mylist" id="title" placeholder="Enter your title..." tabindex="1">
+              <datalist id="mylist">
+                  <option value="Mr">Mr.</option>
+                  <option value="Mrs">Mrs.</option>
+                  <option value="Other">Other</option>
+              </datalist>
+
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First Name" tabindex="2">&nbsp; &nbsp; &nbsp;
+
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last Name" tabindex="3"><br><br>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required tabindex="4"><br><br>
+
+              <label for="tel">Phone Number</label>
+              <input type="tel" id="tel" name="tel" placeholder="Phone Number" required tabindex="5"><br><br>
+          </fieldset>
+
+          <fieldset>
+              <legend><h2>Just a little more info : )</h2></legend>
+              <label for="purpose">Reason of contacting</label>
+              <select id="purpose" name="purpose" tabindex="6">
+                  <option value="Product Demo">Need a Product Demo</option>
+                  <option value="Problem in website">There's a problem in website</option>
+                  <option value="Product complaint">Product Complaint</option>
+                  <option value="Coffee for you" selected>Loved our product ? Want to buy us a coffee ?</option>
+              </select><br><br>
+
+              <label for="uploads">Upload the relevant media</label>
+              <input type="file" id="uploads" name="uploads" accept="image/*, video/*, audio/*" multiple tabindex="7"><br><br>
+
+              <p>Already a user of our product ?</p>
+              <input type="checkbox" name="user" id="c1" value="yes" tabindex="8" >
+              <label for="c1">I am a user of our product ?</label><br>
+              <input type="checkbox" name="user" id="c2" value="no" tabindex="9" >
+              <label for="c2">No, not planning to use it</label><br>
+              <input type="checkbox" name="user" id="c3" value="no-will-try" checked tabindex="10" >
+              <label for="c3">No, but I am planning to use it in future</label><br><br>
+          </fieldset>
+
+          <fieldset>
+              <legend><h2>Your Message and SEND IT!!!</h2></legend>
+              <label for="message">Write your message here</label>
+              <textarea id="message" name="message" rows="10" cols="30" placeholder="Your message..." tabindex="11"></textarea><br><br>
+
+              <button type="submit" value="Submit" formaction="thank-you.html" formmethod="post" style="width: 160px" tabindex="12">SEND IT!</button>
+              <button type="reset" style="width: 160px" tabindex="13">Erase everything</button>
+
+          </fieldset>
+
+      </form>
+      <br><br>
+
+      <h2>FAQs</h2>
+      <details>
+          <summary>What is Fosbil?</summary>
+          <p>We specialize in [Insert Core Service, e.g., digital solutions/consulting/software].
+              Our mission is to help businesses scale by providing innovative, data-driven tools.</p>
+      </details>
+
+      <details>
+          <summary>Where are you located?</summary>
+          <p>Our headquarters are in Tech City, but we operate with a fully remote-friendly team globally.
+              We’re available for virtual meetings across all time zones.</p>
+      </details>
+
+      <details>
+          <summary>How quickly will I hear back?</summary>
+          <p>We aim to respond to all inquiries within 24 business hours.
+              If you reach out over the weekend, expect a ping from us by Monday morning!</p>
+      </details>
+
+      <details>
+          <summary>Do you offer free consultations?</summary>
+          <p>Yes! We offer a complimentary 15-minute discovery call to see if our services align with your project goals.
+              You can request one via the contact form above.</p>
+      </details>
+
+      <details>
+          <summary>I’m having technical trouble with my account. What should I do?</summary>
+          <p>Please email support@fosbil.com directly. Including a screenshot of the issue or the error code helps our team fix things much faster.</p>
+      </details>
+
+      <details>
+          <summary>Is my data safe when I contact you?</summary>
+          <p>Absolutely. Fosbil uses industry-standard encryption. We never sell your contact information to third parties.
+              Check our Privacy Policy for the full details.</p>
+      </details>
+
+  </section>
+</main>
+
+<footer>
+    <address>
+        Fosbil<br>
+        E - 103/A, Vijay Vihar, phase - 2<br>
+        Sector - 4, Rohini<br>
+        New Delhi - 110085<br>
+        asdfsdfsdf<br>
+    </address>
+    <nav>
+        <a href="homepage.html">Home</a><br>
+        <a href="about.html">About</a><br>
+        <a href="libraryver1.html">Version 1</a><br>
+        <a href="libraryver2.html">Version 2</a><br>
+        <a href="contact.html">Contact</a><br>
+        <a href="demo.html">Demo</a>
+    </nav>
+</footer>
+
+</body>
+</html>
