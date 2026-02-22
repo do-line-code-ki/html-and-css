@@ -1,0 +1,50 @@
+p {
+  /* The blue border */
+  border: 2px solid #007cba;
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #f0f8ff;
+}
+
+img {
+  /* The blue border */
+  border: 2px solid #007cba;
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #f0f8ff;
+}
+
+h2 {
+  /* The blue border */
+  border: 2px solid #007cba;
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #f0f8ff;
+}

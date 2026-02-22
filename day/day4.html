@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 4 - Body Element of HTML Document</title>
+    <meta name="description" content="Today I will share what I have learned so far in day 4 of html self-learning classes">
+    <meta name="keywords" content="body element, body part of html document, body tag in html">
+    <meta name="robots" content="index, follow">
+    <base href="http://localhost:63342/HTML%20and%20CSS/day/">
+    <Link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+<header>
+<nav>
+  <a href="day1.html"> Day 1 </a>
+  <a href="day2.html"> Day 2 </a>
+  <a href="day3.html"> Day 3 </a>
+  <a href="day4.html"> Day 4 </a>
+</nav>
+<img src="lib-logo.png" size="any">
+<h1> Day 4 - Body Element of HTML Document </h1>
+</header>
+<section>
+  <h1> Section </h1>
+  <p>This is parent section of the document. Sections are used to divide the content of document into topic-based sections.
+  If you have multiple topics on your page then you should section but if the topics are related to each other somehow use nested sections.
+  </p>
+
+  <section>
+    <h2>Sub Section</h2>
+    <p> This section tag of the HTML document, the border you see all around is because of CSS file</p>
+  </section>
+
+</section>
+
+<section>
+  <h1>Section</h1>
+  <article>
+    <header>
+      <h2>Header of Article </h2>
+    </header>
+    <p> This is the p tag inside the article element. Article tag is element is used to summarize a piece of content in a self-contained topic specific block.
+    </p>
+    <footer><p>Footer of Article</p></footer>
+  </article>
+</section>
+
+
+<section>
+  <h1>How to decide when to use section and article element ?</h1>
+  <p>
+    Think it this way, section breaks down the whole document into topic specific sections, if these topics are mutually exclusive then you need to have multiple sections.
+
+    If some topics are sub-topics of some topics then you need to have them nested under a single section.
+
+    If these topics aka sections have pieces of content that have pieces of content that repeat in same pattern, use article.
+  </p>
+</section>
+
+<section> <!-- Example of Section, Subsection and article -->
+  <h1>Section</h1>
+  <p>P Tag of Section</p>
+      <section>
+        <h2>Sub-Section</h2>
+        <p>P tag og Sub-Section</p>
+
+        <article>
+          <header>Header of Article 1</header>
+          <p>P tag of article 1</p>
+          <footer>Footer of Article 1</footer>
+        </article>
+
+        <article>
+          <header>Header of Article 2</header>
+          <p>P tag of article 2</p>
+          <footer>Footer of Article 2</footer>
+        </article>
+
+        <article>
+          <header>Header of Article 2</header>
+          <p>P tag of article 2</p>
+          <footer>Footer of Article 2</footer>
+        </article>
+
+      </section>
+</section>
+
+
+<aside>
+<h3>This is aside element</h3>
+  <p>Used for providing additional info about the HTML document. This elements is used for 2 things: sidebar and additional content inside a
+  article element.
+
+    A sidebar for a document is understandable but an aside element inside article element ? What for ? THINK!
+  </p>
+</aside>
+
+<section>
+  <h1>Section</h1>
+  <article>
+    <header>
+      <h2>Header of Article </h2>
+    </header>
+    <p> This is the p tag inside the article element.
+      Article tag is element is used to summarize a piece of content in a self-contained topic specific block.</p>
+    <footer><p>Footer of Article</p></footer>
+    <aside>
+      <h3>This is aside element</h3>
+      <p>Used for providing additional info about the HTML document. This elements is used for 2 things: sidebar and additional content inside a
+        article element.
+
+        A sidebar for a document is understandable but an aside element inside article element ? What for ? THINK!
+      </p>
+      <nav>
+        <a href="day1.html"> Day 1 </a> |
+        <a href="day2.html"> Day 2 </a> |
+        <a href="day3.html"> Day 3 </a> |
+        <a href="day4.html"> Day 4 </a> |
+      </nav>
+    </aside>
+  </article>
+</section>
+
+<aside>
+  <nav>
+    <a href="day1.html"> Day 1 </a> |
+    <a href="day2.html"> Day 2 </a> |
+    <a href="day3.html"> Day 3 </a> |
+    <a href="day4.html"> Day 4 </a> |
+  </nav>
+</aside>
+
+<footer>
+  <nav>
+    <a href="https://google.com"> Day 1 at Google</a> |
+    <a href="https://google.com"> Day 2 at Google </a> |
+    <a href="https://google.com"> Day 3 at Google </a> |
+    <a href="https://google.com"> Day 4 at Google </a> |
+  </nav>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <base href="https://google.com/" target="_self">  -->
+    <!-- HTML serves on first-cum-first basis so the href's value in the first element will be taken as the primary base url -->
+    <base href="http://localhost:63342/HTML%20and%20CSS/day/" target="_blank">
+    <base href="http://localhost:63342/HTML%20and%20CSS/day" target="_blank">
+
+
+
+    <!-- <base href="https://google.com/" target="_parent">  -->
+  <!--  <base href="https://google.com" target="_top"> -->
+   <meta charset="UTF-8">
+
+      <!--
+
+      Scenario Breakdown
+
+If your <head> looks like this:
+
+HTML
+<link rel="stylesheet" href="styles.css">
+<style>
+  p { color: red; }
+</style>
+
+Winner: The <style> block.
+Why: It is lower in the document, so it overrides the external file.
+
+If your <head> looks like this:
+
+HTML
+<style>
+  p { color: red; }
+</style>
+<link rel="stylesheet" href="styles.css">
+
+Winner: The <link> (external stylesheet).
+Why: It appears after the internal style block, so its rules are processed last.
+
+In general rule: "Last one wins" but "last one wins" rule only applies if the specificity is exactly the same.
+
+         1. Specificity: If your <link> has a more specific selector (like #header p) and your <style> has a
+            general one (just p), the more specific one wins regardless of the order.
+         2. Inline Styles: If you put a style="..." attribute directly on an HTML element,
+            that will almost always beat both the <link> and the <style> block.
+         3. !important: Any rule marked with !important will override everything else, ignoring the order entirely.
+
+         Guess Who's gonna override in the below mentioned style and link tags ?
+         Guess Who's gonna override when you will remove the p (this p -> p { ) inside the style element's code ?
+      -->
+
+    <Link rel="stylesheet" type="text/css" href="mainstyle.css"> <!--blue color -->
+
+    <!-- Purple color box --><style>
+  p {
+  /* The purple border */
+  border: 2px solid #800080;
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light purple background to help it stand out */
+  background-color: #CBC3E3;
+}
+
+img {
+/* The purple border */
+border: 2px solid #800080;
+
+/* Space between the text and the border */
+padding: 15px;
+
+/* Space outside the box to separate it from other elements */
+margin: 10px 0;
+
+/* Rounds the corners slightly */
+border-radius: 4px;
+
+/* Optional: adds a very light purple background to help it stand out */
+background-color: #CBC3E3;
+}
+</style>
+
+
+
+   <link  rel="icon" href="lib-logo.png">
+
+    <!--
+
+    Take a close look at the 2 < meta > elements with http-equiv attribute. As per the code the page should reload once
+    and then reload again and again, leading to an infinite redirect loop but that doesn't happen. Here's why
+
+    What you just witnessed is your web browser being "smart" to prevent a broken experience.
+    Since the code technically created an infinite loop (Reload $\rightarrow$ Reload $\rightarrow$ Reload...),
+    the browser intervened.Why did this happen? (The "Loop Protection" Theory)Browsers like Chrome,
+    Firefox, and Edge have built-in safeguards to stop pages from trapping users in infinite loops.
+
+    Round 1 (The Reload): The browser read the file top-to-bottom. It saw the first line (refresh content="5") and obeyed it.
+    It ignored the second line for the moment because the first instruction was sufficient. The page reloaded after 5 seconds.
+
+    Round 2 (The Rescue): When the page reloaded, the browser likely detected a pattern: "I just refreshed this page 5 seconds ago,
+    and now it wants me to do it again? This looks like an infinite loop."
+
+    The Switch: To break the loop, the browser looked for an alternative. It saw the second command (the redirect to day1.html)
+    and decided to execute that one instead to "escape" the loop.Why you shouldn't rely on thisThis behavior is a
+    browser safety feature, not a standard coding rule.
+
+    In Chrome: It might behave as you saw (Reload $\rightarrow$ Redirect).
+
+    In Safari: It might just get stuck in the infinite reload loop forever.
+
+    In Firefox: It might stop entirely and show a "The page isn't redirecting properly" error.
+
+    The Fix
+
+    To make the redirect strictly reliable for all users, you must remove the ambiguity. Delete the first
+    line entirely so the browser has only one clear instruction:HTML<meta http-equiv="refresh" content="5; URL=day1.html">
+
+    -->
+    <meta http-equiv="refresh" content="13">
+
+    <!-- The URL attribute's value in the below-mentioned element, appends the relative url day1.html by adding the base URL,
+    if you wish to override it use an absolute URL -->
+
+    <!-- In-case of the presence of similar elements the HTML serves on first-cum-first-basis. Here, also the page will redirect to
+     day1.html-->
+
+    <meta http-equiv="refresh" content="13 ; URL=day1.html">
+
+    <!--
+
+ <meta http-equiv="refresh" content="13">
+ <meta http-equiv="refresh" content="20 ; URL=day2.html">
+
+ How will the browser interpret if these 2 lines of code are mentioned in the given order ?
+
+ Here is how the browser will interpret these two lines of code in that specific order.
+
+The Short Answer
+The browser will refresh the current page every 13 seconds in an infinite loop. It will never redirect to day2.html.
+
+Detailed Breakdown
+Here is the step-by-step logic the browser follows:
+
+Parsing Line 1: <meta http-equiv="refresh" content="13">
+The browser reads this and starts a timer. It schedules a reload of the current URL to happen in 13 seconds.
+
+Parsing Line 2: <meta http-equiv="refresh" content="20 ; URL=day2.html">
+The browser reads this and acknowledges a request to redirect to day2.html in 20 seconds.
+
+The Race Condition:
+The browser now has two scheduled events. However, the first event (the 13-second refresh) occurs before the second event (the 20-second redirect).
+
+Execution (At T+13 Seconds):
+When the 13-second timer runs out, the browser executes the refresh. The page reloads.
+
+The Reset:
+As soon as the page reloads, the browser treats it as a fresh visit. All previous timers (including the 20-second redirect) are wiped out.
+The browser parses the HTML again, sees the first line again, and starts the 13-second timer anew.
+
+-->
+
+    <meta http-equiv="refresh" content="URL=day2.html">
+    <meta name="robots" content="index,follow">
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="keywords" content="library, library of books, books of library, library in general, say no to nakli waali library">
+    <meta name="author" content="Mukesh Chaurasia">
+   <meta name="viewport" content="width=device-width initial-scale=1.0, shrink-to-fit=no">
+   <meta name="description" content="Hi there I am the description of this page. Like it?">
+    <title>Day 3 - Head Element of HTML Document</title>
+
+</head>
+<body>
+<nav>
+    <a href="day1.html"> Day 1 </a>
+    <a href="day2.html"> Day 2 </a>
+    <a href="day3.html"> Day 3 </a>
+    <a href="day4.html"> Day 4 </a>
+</nav>
+<!-- Green color box --><style>
+img {
+/* The purple border */
+border: 2px solid #008000;
+
+/* Space between the text and the border */
+padding: 15px;
+
+/* Space outside the box to separate it from other elements */
+margin: 10px 0;
+
+/* Rounds the corners slightly */
+border-radius: 4px;
+
+/* Optional: adds a very light purple background to help it stand out */
+background-color: #90EE90;
+}
+
+    h1 {
+/* The yellow border */
+border: 2px solid #FFFF00;
+
+/* Space between the text and the border */
+padding: 15px;
+
+/* Space outside the box to separate it from other elements */
+margin: 10px 0;
+
+/* Rounds the corners slightly */
+border-radius: 4px;
+
+/* Optional: adds a very light purple background to help it stand out */
+background-color: #FFFFED;
+}
+</style>
+<img src="lib-logo.png" alt="library logo">
+<h1>Day 3 - Head Element of HTML Document</h1>
+<h2>Read the source code for the full info</h2>
+
+<!--
+
+Question - What will happen if I use base url in a html document and then use a an absolute url at a specific link in the file ?
+
+The absolute URL will completely ignore the <base> tag.
+
+Think of the <base> tag as a "default prefix" for lazy links. It only steps in when a URL is incomplete (relative). If you provide a full, absolute URL, the browser sees you’ve already given it the whole map and won't try to add anything to it.
+
+Here is the breakdown of how the browser handles the conflict:
+
+1. The Priority Rule
+
+In HTML, specificity wins. * Relative URLs (e.g., href="contact.html") are combined with the <base> URL.
+
+Absolute URLs (e.g., href="https://google.com") are considered "fully qualified."
+The browser recognizes the protocol (http:// or https://) and stops looking for any further instructions.
+
+2. Side-by-Side Example
+
+If your document has this setup:
+
+HTML
+<head>
+  <base href="https://mysite.com/assets/">
+</head>
+
+<body>
+  <a href="logo.png">Relative Link</a>
+
+  <a href="https://wikipedia.org">Absolute Link</a>
+</body>
+
+3. Common Use Cases & Gotchas
+
+Using both in one document is actually quite common, but there are two things to watch out for:
+
+Anchor Links (Internal Fragments): This is the biggest "trap."
+If you have <base href="https://example.com/shop/"> and you use <a href="#top">,
+the browser will actually try to send the user to https://example.com/shop/#top instead of just jumping up the current page.
+
+External Assets: Most developers use <base> to point to a CDN or a specific sub-folder for images,
+while still using absolute URLs for external social media links (Twitter, LinkedIn, etc.).
+
+
+CHECK OUT THE BELOW TWO LINES OF CODE TO SEE THE LIVE IMPLEMENTATION
+
+-->
+<p>Hi There!, <a href="day1.html">This link</a> you see is pulled as a RELATIVE URL from the BASE URL already given in the code.</p>
+<P>Hi There!, <a href="https://google.com/">This link</a> you see is pulled as a ABSOLUTE URL overidding the BASE URL already given in the code.</P>
+
+</body>
+</html>

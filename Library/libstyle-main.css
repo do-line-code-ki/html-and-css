@@ -1,0 +1,198 @@
+p {
+  /* The blue border */
+ /* border: 2px solid #000000; */
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+
+}
+
+img {
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+}
+
+h1 {
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color:#E0DC8D
+
+}
+
+h2,h3,h4 {
+
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color:#E0DC8D
+
+}
+
+
+section {
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+}
+
+
+article {
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+}
+
+aside {
+
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #E0DC8D;
+
+}
+
+
+a {
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+}
+
+nav {
+
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+}
+
+header {
+
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #DBE3BC;
+}
+
+footer {
+
+
+  /* Space between the text and the border */
+  padding: 15px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #DBE3BC;
+}
+
+dl,ul {
+
+
+  /* Space between the text and the border */
+  padding: 30px;
+
+  /* Space outside the box to separate it from other elements */
+  margin: 10px 0;
+
+  /* Rounds the corners slightly */
+  border-radius: 4px;
+
+
+}
+
+th,td {
+  /* The black border */
+  border: 1px solid #000000;
+
+  /* Space between the text and the border */
+  padding: 30px;
+}
+
+
+table {
+  /* The black border */
+  border: 1px solid #000000;
+}
+
+body {
+  /* Optional: adds a very light blue background to help it stand out */
+  background-color: #FFFFFF;
+}

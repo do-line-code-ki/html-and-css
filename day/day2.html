@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 2: Structure of a HTML Document</title>
+    <Link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+<nav>
+    <a href="day1.html"> Day 1 </a>
+    <a href="day2.html"> Day 2 </a>
+    <a href="day3.html"> Day 3 </a>
+    <a href="day4.html"> Day 4 </a>
+</nav>
+<h1>Day 2: Structure of a HTML Document</h1>
+<p> I just read about the elements and tags. I will describe it for you what I have just read</p>
+<h2> What is an HTML element ?</h2>
+<p> Every line of code that you write in html document stating with a < opening tag> and ending with a < closing tag > is called an element.
+<p> For example:
+  <p>This line that you are reading is currently wrapped inside p tags.
+<p>So this whole line of code < p > This line that you are reading is currently wrapped inside p tags. < /p > is called an HTML element</p>
+<p> This whole chunk of text is inside < body > element and < body > elements is inside < HTML > ELEMENT.
+
+<H2>So what is tag ?</H2>
+  <p> A tag is a part of an elements with 2 variants: opening tag and closing tag
+
+<!-- These are comments, be careful about what you add here because this may not show up on the web page but these comments will definitely show up in the source code. Wanna try it ?
+Load the HTML file in browser and check the source code for a smiley -->
+<H2> So, do all tag have opening and closing tags ?</H2>
+<p> No, there are some tags known as Standalone tags like < br > (To add a new line). So it is best advised
+  to not use tags without closing tags. Best practice is to close tags whenever you open one</p>
+
+<h2> Let's talk about attributes </h2>
+<p> Attributes are special qualities you add to an element. These qualities are declared after opening a html tag. For example:
+<p> this line that you are reading has a <a href="https://google.com"> clickable link</a>, this link is added by using href attribute inside an < a > tag.
+<p> Similarly, the lang="en" we use after opening the < html > tag is also an attribute.
+<p> Go back to the clickable line, did you notice something ? What?!!!!
+<!-- :) I am Right Here!  -->
+<p> We used an < a > tag inside a < p > tag, a tag inside a tag, this is called NESTING or NESTED TAGS.
+<P> When using nested tags it is necessary you close the inner tags first before closing the outer tag.
+<p> this is inner an outer tags have special names for them: parent tag (for outer tag) and child tag (for inner tag)
+<h2> Let's talk <p>about</p> attributes </h2>
+<p> See what we did with the heading ?
+<p> we inserted a p tag inside a heading tag. Though it is not good practice but we did it just to show the implications of nesting.
+<p> if you see a tag YOU CAN NEST IT but that DOESN'T mean YOU SHOULD NEST IT</p>
+</body>
+</html>
