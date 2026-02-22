@@ -9,14 +9,14 @@
     <meta name="Author" content="Mukesh Chaurasia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libstyle-main.css">
-    <link rel="icon" type="image/x-icon" href="library-logo.png">
+    <link rel="icon" type="image/x-icon" href="Images/library-logo.png">
 </head>
 <body>
 <header>
 
     <nav>
         <a href="homepage.html">
-            <img src="library-logo.png" alt="Fosbil Logo" title="Fosbil Logo">
+            <img src="Images/library-logo.png" alt="Fosbil Logo" title="Fosbil Logo" width="130" height="130">
         </a>
         <a href="homepage.html">Home</a>
         <a href="#">About</a>
@@ -29,10 +29,37 @@
 <section>
     <figure>
     <!-- This is the hero section's images. Put h1 on the hero image slider-->
-    <img src="library%201.jpg" width="1080" height="720" alt="Cornelius Library" title="Cornelius Library">
-    <img src="library%202.jpg" width="1080" height="720" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
-    <img src="library%203.jpeg" width="1080" height="720" alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
-    <img src="library%204.jpg" width="1080" height="720" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
+        <picture>
+            <source media="(min-width: 1080px)" srcset="Images/library_1_1080.jpg">
+            <source media="(min-width: 720px)" srcset="Images/library_1_720.jpg">
+            <source media="(min-width: 480px)" srcset="Images/library_1_480.jpg">
+            <!-- Fall back image for old browser-->
+            <img src="Images/library_1.jpg" alt="Cornelius Library" title="Cornelius Library">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 1080px)" srcset="Images/library_2_1080.jpg">
+            <source media="(min-width: 720px)" srcset="Images/library_2_720.jpg">
+            <source media="(min-width: 480px)" srcset="Images/library_2_480.jpg">
+            <!-- Fall back image for old browser-->
+            <img src="Images/library_2.jpg" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+            <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+            <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg">
+            <!-- Fall back image for old browser-->
+            <img src="Images/library_3.jpeg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+        </picture>
+
+        <picture>
+            <source media="(min-width: 1080px)" srcset="Images/library_4_1080.jpg">
+            <source media="(min-width: 720px)" srcset="Images/library_4_720.jpg">
+            <source media="(min-width: 480px)" srcset="Images/library_4_480.jpg">
+            <!-- Fall back image for old browser-->
+            <img src="Images/library_4.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
+        </picture>
         </figure>
     <h1>Welcome to my Fosbil</h1>
     <p>
@@ -104,13 +131,23 @@
     <li>Utilization Tracking: Monitor library traffic and resource turnover rates.</li>
 </ul>
 <hr>
-    <h2 id="sss">Secure, Scalable, and Smart</h2>
-    <p>"Fosbil is not just a management tool—it is a complete digital ecosystem."</p>
-<ul>
-    <li>Top-Tier Security: Role-based access control and encrypted data storage.</li>
-    <li>Cloud or On-Premise: Deploy Fosbil in a way that fits your infrastructure.</li>
-    <li>Scalable Architecture: As your collection grows, Fosbil grows with you.</li>
-</ul>
+    <h2 id="sss">Why use Fosbil library management software ?</h2>
+    <img src="Images/benefits-of-fosbil.png" alt="Benefits of Fosbil" usemap="#benefitsmap">
+    <map id="fosbil-benefits-wheel-daigram" name="benefitsmap">
+
+        <area shape="poly" alt="improved organization"           title="improved organization" coords="382,83,476,373,547,372,646,82,509,64"           href="#sss" target="_blank" />
+        <area shape="poly" alt="time savings"                    title="time savings" coords="666,90,561,386,621,427,882,250,785,150"          href="#sss" target="_blank"        />
+        <area shape="poly" alt="cost efficiency"                 title="cost efficiency" coords="963,505,655,498,627,436,893,266,939,366"         href="#sss" target="_blank" />
+        <area shape="poly" alt="cost efficiency"                 title="cost efficiency" coords="894,762,634,585,654,523,964,526,943,648"         href="#sss" target="_blank" />
+        <area shape="poly" alt="enhanced user experience"        title="enhanced user experience" coords="669,935,565,642,620,601,881,780,786,870"         href="#sss" target="_blank" />
+        <area shape="poly" alt="data security"                   title="data security" coords="386,945,478,653,546,650,644,941,516,964"         href="#sss" target="_blank" />
+        <area shape="poly" alt="better reporting and analytics"  title="better reporting and analytics" coords="360,936,457,643,400,604,143,777,243,873"         href="#sss" target="_blank" />
+        <area shape="poly" alt="reter sesuting"                  title="reter sesuting" coords="62,526,363,519,389,585,132,761,79,647"           href="#sss" target="_blank" />
+        <area shape="poly" alt="remote access and mobile"        title="remote access and mobile" coords="59,506,367,503,391,434,130,263,86,364"           href="#sss" target="_blank" />
+        <area shape="poly" alt="collection growth and discovery" title="collection growth and discovery" coords="147,251,398,421,460,377,359,87,243,151"          href="#sss" target="_blank" />
+
+        <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+    </map>
     <hr>
     <h2 id="future-of-lirary">Experience the Future of Library Science</h2>
     <p>Join the hundreds of institutions worldwide that have moved beyond paper logs and legacy systems. Enhance your service quality, ensure transparency,
@@ -118,7 +155,17 @@
 <hr>
     <h2>Ready to modernize your library?</h2>
     <figure>
-        <video src="LibraryIntro.mp4" width="1080" height="720" controls muted poster="library%202.jpg"> Your Browser doesn't support this video </video>
+        <video width="2160" height="1080" controls muted loop autoplay poster="Images/library_2_1080.jpg" >
+            <source src="videos/LibraryIntro.mp4" type="video/mp4">
+            <source src="videos/LibraryIntro.mkv" type="video/mkv">
+            <source src="videos/LibraryIntro.mov" type="video/mov">
+            <source src="videos/LibraryIntro.webm" type="video/webm">
+            <source src="videos/LibraryIntro.wmv" type="video/wmv">
+            <track src="videos/libraryintro_en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="videos/libraryintro_de.vtt" kind="subtitles" srclang="de" label="German">
+            <track default src="videos/libraryintro_hi.vtt" kind="subtitles" srclang="hi" label="Hindi">
+            Your Browser doesn't support this video
+        </video>
         <figcaption> Watch our product tour video, to decide whether this is the right fit for your library or not ?</figcaption>
         </figure>
 <hr>
@@ -231,6 +278,23 @@
         </table>
         <figcaption> The comparison is based on 2025 data </figcaption>
     </figure>
+    </figure>
+
+    <hr>
+    <h2>Testimonials</h2>
+
+    <p> Hear from our customers what they have to say about our product and service</p>
+    <audio controls>
+        <source src="audios/reviewer_1.mp3" type="audio/mp3">
+        <source src="audios/reviewer_1.mpeg" type="audio/mpeg">
+        This web browser doesn't support audio tag. You can read testimonials on our GMB Profile
+    </audio>
+
+    <audio controls>
+        <source src="audios/reviewer_2.mp3" type="audio/mp3">
+        <source src="audios/reviewer_2.mpeg" type="audio/mpeg">
+        This web browser doesn't support audio tag. You can read testimonials on our GMB Profile
+    </audio>
 
 </section>
 </main>
