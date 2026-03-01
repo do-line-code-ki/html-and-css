@@ -1,6 +1,6 @@
 .grid{
 display: grid;
-grid-template-rows: 200px repeat(10,auto) 100px;
+grid-template-rows: 130px repeat(10,auto) 100px;
 grid-template-columns: repeat(10,10%);
 font-family: Roboto;
 font-size: 17px;
@@ -40,6 +40,42 @@ color:white;
 padding: 30px;
 }
 
+.features-sec-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-self: center;
+}
+
+.features-sec-and-features-wheel{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.future-of-library-sec{
+background-color:#544BDB;
+color:white;
+}
+
+article{
+border: 1px solid #544BDB;
+margin: 10px;
+padding: 15px;
+background-color:#544BDB;
+color:white;
+box-shadow: 15px 15px gray;
+}
+
+h2{
+font-size: 60px;
+font-family: 'Bebas Neue', sans-serif;
+}
+
+h3{
+font-size: 30px;
+font-family: 'Bebas Neue', sans-serif;
+}
 
 a:link {
   color: white;
@@ -54,7 +90,6 @@ color: orange;
 .main{
 background-image: url("images/new-bg-vertical-resized.jpg");
 }
-
 
 /* background images ends here */
 
@@ -78,4 +113,5 @@ table {
 
 section {
   overflow: hidden;
+  padding: 30px;
 }
