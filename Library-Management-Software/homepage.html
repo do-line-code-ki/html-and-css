@@ -8,13 +8,13 @@
     <meta name="robots" content="index, follow">
     <meta name="Author" content="Mukesh Chaurasia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="libstyle-main.css">
+    <link rel="stylesheet" href="libstyle-homepage.css">
     <link rel="icon" type="image/x-icon" href="Images/library-logo.png">
 </head>
 <body class="grid">
 <header class="header">
     <a href="homepage.html">
-        <img src="Images/library-logo.png" alt="Fosbil Logo" title="Fosbil Logo" width="130" height="130">
+        <img src="Images/library-logo.png" alt="Fosbil Logo" title="Fosbil Logo" width="130" height="130" alt="Fosbil Logo">
     </a>
     </header>
 <nav class="nav">
@@ -26,8 +26,9 @@
         <a href="contact.html">Contact</a>
         <a href="demo.html">Demo</a>
     </nav>
+
 <main class="main">
-<section>
+     <section class="hero-sec">
     <figure>
     <!-- This is the hero section's images. Put h1 on the hero image slider-->
         <picture>
@@ -62,6 +63,9 @@
             <img src="Images/library_4.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
         </picture>
         </figure>
+    </section>
+
+    <section class="welcome-sec">
     <h1>Welcome to my Fosbil</h1>
     <p>
         Fosbil is a comprehensive <b>library management software</b> designed to streamline, automate, and optimize every aspect of library operations.
@@ -84,19 +88,13 @@
         <br>
         Fosbil is not just a management tool — it is a complete digital ecosystem that transforms traditional libraries into smart, connected knowledge centers.
     </p>
+        </section>
 
-    <hr>
-
+    <section class="features-sec">
     <h2 id="why-choose-fosbil">Why Choose Fosbil?</h2>
    <p>In a world driven by information, a library should be more than just a room full of books—it should be a seamless digital experience.
        Fosbil (featuring the Fosbil integrated platform) bridges the gap between traditional resource management and modern technological efficiency.</p>
-    <h3>🏢 Built for Every Institution</h3>
-    <p>Whether you are managing a K-12 school library, a high-traffic university research center, a corporate archive, or a bustling public library,
-        Fosbil scales to meet your unique demands.</p>
-<hr>
-    <h2 id="core-features">Core Features of the Fosbil</h2>
-    <p>Our platform centralizes every aspect of your operations into one intuitive interface.</p>
-
+    <article>
     <h3 id="cataloging-metadata"><em>📚 Advanced Cataloging & Metadata</em>></h3>
     <p>Stop searching and start finding. Our structured metadata management supports diverse resource types.</p>
   <dl>
@@ -109,6 +107,8 @@
       <dt><em>Bulk Import</em></dt>
       <dd>Seamlessly migrate your existing records with data integrity.</dd>
   </dl>
+    </article>
+    <article>
     <h3 id="automation-circulation"><em>🔄 Intelligent Automation & Circulation</em></h3>
     <p>Reduce manual errors and free up your staff for high-value tasks.</p>
    <ul>
@@ -116,6 +116,8 @@
        <li>Real-Time Inventory: Always know what’s on the shelf and what’s in circulation.</li>
        <li>Automated Notifications: Instant SMS and email alerts for due dates, renewals, and arrivals.</li>
    </ul>
+    </article>
+    <article>
     <h3 id="member-centric"><em>👥 Member-Centric Experience</em></h3>
     <p>Empower your readers with self-service tools that increase engagement.</p>
 <ul>
@@ -124,6 +126,8 @@
     <li>Fine Management: Automated calculation and tracking of overdue charges.</li>
 
 </ul>
+    </article>
+    <article>
     <h3 id="robust-analytics"><em>📊 Robust Analytics & Reporting</em></h3>
     <p>Make data-driven decisions to grow your collection.</p>
 <ul>
@@ -131,7 +135,10 @@
     <li>Customizable Reports: Generate daily, monthly, or annual performance audits in one click.</li>
     <li>Utilization Tracking: Monitor library traffic and resource turnover rates.</li>
 </ul>
-<hr>
+    </article>
+</section>
+
+    <section class="benefits-sec">
     <h2 id="sss">Why use Fosbil library management software ?</h2>
     <img src="Images/benefits-of-fosbil.png" alt="Benefits of Fosbil" usemap="#benefitsmap">
     <map id="fosbil-benefits-wheel-daigram" name="benefitsmap">
@@ -149,11 +156,13 @@
 
         <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
     </map>
-    <hr>
+
     <h2 id="future-of-lirary">Experience the Future of Library Science</h2>
     <p>Join the hundreds of institutions worldwide that have moved beyond paper logs and legacy systems. Enhance your service quality, ensure transparency,
         and provide your community with the knowledge tools they deserve.</p>
-<hr>
+    </section>
+
+    <section class="video-sec">
     <h2>Ready to modernize your library?</h2>
     <figure>
         <video width="2160" height="1080" controls muted loop autoplay poster="Images/library_2_1080.jpg" >
@@ -169,7 +178,9 @@
         </video>
         <figcaption> Watch our product tour video, to decide whether this is the right fit for your library or not ?</figcaption>
         </figure>
-<hr>
+        </section>
+
+    <section class="comparative-table-sec">
  <h2 id="comp-table">Comparative Analysis: Fosbil vs. Industry Leaders</h2>
     <figure>
 
@@ -279,8 +290,9 @@
         </table>
         <figcaption> The comparison is based on 2025 data </figcaption>
     </figure>
+</section>
 
-    <hr>
+    <section class="testimonials-sec">
     <h2>Testimonials</h2>
 
     <p> Hear from our customers what they have to say about our product and service</p>
@@ -295,76 +307,8 @@
         <source src="audios/reviewer_2.mpeg" type="audio/mpeg">
         This web browser doesn't support audio tag. You can read testimonials on our GMB Profile
     </audio>
-
-</section>
+    </section>
 </main>
-<aside class="author-bio">
-    <p> <b>This is the SideBar</b> for the homepage. Since I don't know how to make layout of the page, so it's here in the bottom of the page<br>
-        <br>
-        Hi, I am Mukesh Chaurasia! <br><br>
-        This tools that you are using is made by me. I am a Part-Stack Developer (I am still learning the frontend, backend, and databAse) and SEO.
-        I love reading books. Sir, Charlie Munger is one my favorite person, besides Sir, Warren Buffett. I am married and have a beautiful daughter who is so smart and intelligent
-        that I feel dumb in front of her (I love this feeling!)</p>
-    <p> Care to know more about me ? Check out the links below</p>
-    <ul>
-        <li><a href="#">Stricly Professional</a></li>
-        <li><a href="#">Facebook Friendly</a></li>
-        <li><a href="mailto:mukessdsdam32@gmail.com">All Business!</a></li>
-        <li><a href="tel:+91 9696443987">Call me</a></li>
-    </ul>
-</aside>
-<aside class="table-of-contents">
-    <p> Table of contents (This will go in sidebar)</p>
-    <ol>
-        <li><a href="#why-choose-fosbil">Why Choose Fosbil?</a></li>
-        <li>
-            <a href="#core-features">Core Features of the Fosbil</a>
-            <ol>
-                <li>
-                    <a href="#cataloging-metadata">Advanced Cataloging & Metadata</a>
-                    <ol>
-                        <li>Multi-Media Support</li>
-                        <li>Quick Discovery</li>
-                        <li>Bulk Import</li>
-                    </ol>
-                </li>
-                <li>
-                    <a href="#automation-circulation">Intelligent Automation & Circulation</a>
-                    <ol>
-                        <li>Barcode & RFID Integration</li>
-                        <li>Real-Time Inventory</li>
-                        <li>Automated Notifications</li>
-                    </ol>
-                </li>
-                <li>
-                    <a href="#member-centric">Member-Centric Experience</a>
-                    <ol>
-                        <li>Intuitive OPAC</li>
-                        <li>Personal Dashboards</li>
-                        <li>Fine Management</li>
-                    </ol>
-                </li>
-                <li>
-                    <a href="#robust-analytics">Robust Analytics & Reporting</a>
-                    <ol>
-                        <li>Acquisition Insights</li>
-                        <li>Customizable Reports</li>
-                        <li>Utilization Tracking</li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li>
-            <a href="#sss">Secure, Scalable, and Smart</a>
-            <ol>
-                <li>Top-Tier Security</li>
-                <li>Cloud or On-Premise</li>
-                <li>Scalable Architecture</li>
-            </ol>
-        </li>
-        <li><a href="#future-of-lirary">Experience the Future of Library Science</a></li>
-    </ol>
-    </aside>
 
 <footer class="footer">
     <address>
@@ -372,9 +316,9 @@
         E - 103/A, Vijay Vihar, phase - 2<br>
         Sector - 4, Rohini<br>
         New Delhi - 110085<br>
-        asdfsdfsdf<br>
+        asdfsdfsdf
     </address>
-    <nav>
+    <nav class="footer-nav">
         <a href="homepage.html">Home</a><br>
         <a href="about.html">About</a><br>
         <a href="libraryver1.html">Version 1</a><br>
