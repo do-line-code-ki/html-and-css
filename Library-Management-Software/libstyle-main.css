@@ -1,3 +1,95 @@
+.grid{
+display: grid;
+grid-template-rows: 200px repeat(10,auto) 100px;
+grid-template-columns: repeat(10,10%);
+}
+
+.header{
+grid-column: 1/11;
+grid-row: 1/2;
+
+}
+
+.nav{
+grid-column: 1/11;
+grid-row:2/3;
+
+}
+
+.main{
+grid-column:1/11;
+grid-row:3/9;
+
+}
+
+.author-bio{
+grid-column: 1/11;
+grid-row:9/10;
+}
+
+.table-of-contents{
+grid-column: 1/11;
+grid-row:10/11;
+
+}
+
+.footer{
+grid-column: 1/11;
+grid-row:11/12;
+}
+
+@media screen and (min-width: 40em) {
+
+.main{
+grid-column:1/8;
+grid-row:3/9;
+
+}
+
+.author-bio{
+grid-column: 8/11;
+grid-row:3/4;
+}
+
+.table-of-contents{
+grid-column: 8/11;
+grid-row:4/5;
+
+}
+
+.footer{
+grid-column: 1/11;
+grid-row:9/12;
+}
+
+}
+
+@media screen and (min-width: 64em) {
+
+.main{
+grid-column:1/8;
+grid-row:3/9;
+
+}
+
+.author-bio{
+grid-column: 8/11;
+grid-row:3/4;
+}
+
+.table-of-contents{
+grid-column: 8/11;
+grid-row:4/5;
+
+}
+
+.footer{
+grid-column: 1/11;
+grid-row:9/12;
+}
+
+}
+
 p {
   /* The blue border */
  /* border: 2px solid #000000; */
@@ -16,14 +108,8 @@ p {
 
 img {
 
-  /* Space between the text and the border */
-  padding: 15px;
-
-  /* Space outside the box to separate it from other elements */
-  margin: 10px 0;
-
   /* Rounds the corners slightly */
-  border-radius: 4px;
+  border-radius: 20px;
 
 }
 
@@ -61,18 +147,6 @@ h2,h3,h4 {
 }
 
 
-section {
-
-  /* Space between the text and the border */
-  padding: 15px;
-
-  /* Space outside the box to separate it from other elements */
-  margin: 10px 0;
-
-  /* Rounds the corners slightly */
-  border-radius: 4px;
-
-}
 
 
 article {
@@ -117,7 +191,7 @@ a {
   border-radius: 4px;
 }
 
-nav {
+.nav {
 
 
   /* Space between the text and the border */
@@ -128,6 +202,9 @@ nav {
 
   /* Rounds the corners slightly */
   border-radius: 4px;
+
+    /* Optional: adds a very light blue background to help it stand out */
+    background-color: #DBE3BC;
 
 }
 
