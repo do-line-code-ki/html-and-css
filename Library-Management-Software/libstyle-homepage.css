@@ -1,6 +1,6 @@
 .grid{
 display: grid;
-grid-template-rows: 130px repeat(10,auto) 100px;
+grid-template-rows: auto repeat(10,auto) auto;
 grid-template-columns: repeat(10,10%);
 font-family: Roboto;
 font-size: 17px;
@@ -11,22 +11,32 @@ padding: 0;
 .header{
 grid-column: 1/11;
 grid-row: 1/2;
+background-color: #544BDB;
 }
 
-.nav{
-display: flex;
-flex-direction: row;
-justify-content:center;
-gap: 60px;
-padding: 20px 0px;
-grid-column: 1/11;
-grid-row:2/3;
-background-color:#544BDB;
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav-item {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0rem 18rem 0rem 0rem;
+}
+
+.nav .logo {
+  justify-self: flex-start;
+  padding: 0rem 0rem 0rem 7rem;
+
 }
 
 .main{
 grid-column:1/11;
-grid-row:3/9;
+grid-row:2/9;
 }
 
 .footer{
@@ -34,10 +44,21 @@ grid-column: 1/11;
 grid-row:9/13;
 display: flex;
 flex-direction: row;
-gap: 600px;
+flex-wrap:wrap;
+gap: 20rem;
 background-color:#544BDB;
 color:white;
 padding: 30px;
+}
+
+.footer a{
+text-decoration:none;
+color:white;
+}
+
+.hero-sec{
+display: flexbox;
+flex-wrap: wrap;
 }
 
 .features-sec-1{
@@ -58,6 +79,11 @@ background-color:#544BDB;
 color:white;
 }
 
+.comparative-table-sec{
+display: grid;
+grid-template-columns: auto auto;
+}
+
 article{
 border: 1px solid #544BDB;
 margin: 10px;
@@ -68,6 +94,7 @@ box-shadow: 15px 15px gray;
 }
 
 h2{
+display:inline;
 font-size: 60px;
 font-family: 'Bebas Neue', sans-serif;
 }
@@ -100,7 +127,7 @@ img {
 
 th,td {
   /* The black border */
-  border: 1px solid #000000;
+  border: 1px solid white;
 
   /* Space between the text and the border */
   padding: 30px;
@@ -108,10 +135,45 @@ th,td {
 
 table {
   /* The black border */
-  border: 1px solid #000000;
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: #FFFFFF;
+  box-shadow: 15px 15px gray;
 }
 
 section {
   overflow: hidden;
-  padding: 30px;
+  padding: 2rem;
+}
+
+#comp-table{
+text-decoration: underline;
+text-decoration-color: orange;
+text-decoration-thickness: 0.58rem;
+}
+
+figcaption{
+text-align:left;
+font-size: 20px;
+margin-top: 20px;
+}
+
+.video-sec{
+padding:0px;
+}
+
+.video-sec video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-sec figure {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome-sec-logo{
+float:left;
+margin: 0px 10px 10px 10px;
 }

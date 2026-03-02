@@ -13,19 +13,21 @@
 </head>
 <body class="grid">
 <header class="header">
-    <a href="homepage.html">
-        <img src="Images/library-logo.png" title="Fosbil Logo" width="130" height="130" alt="Fosbil Logo">
-    </a>
-    </header>
-<nav class="nav">
 
-        <a href="homepage.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="libraryver1.html">Version 1</a>
-        <a href="libraryver2.html">Version 2</a>
-        <a href="contact.html">Contact</a>
-        <a href="demo.html">Demo</a>
+    <nav class="nav">
+        <a class="logo" href="homepage.html">
+            <img src="Images/library-logo.png" title="Fosbil Logo" width="130" height="130" alt="Fosbil Logo">
+        </a>
+        <div class="nav-item">
+        <a  href="homepage.html">Home</a>
+        <a  href="about.html">About</a>
+        <a  href="libraryver1.html">Version 1</a>
+        <a  href="libraryver2.html">Version 2</a>
+        <a  href="contact.html">Contact</a>
+        <a  href="demo.html">Demo</a>
+        </div>
     </nav>
+    </header>
 
 <main class="main">
      <section class="hero-sec">
@@ -67,6 +69,9 @@
 
     <section class="welcome-sec">
     <h1>Welcome to my Fosbil</h1>
+        <figure>
+            <img id= "welcome-sec-logo" src="Images/Fosbil-logo-with-text.png" title="Fosbil Logo with text" alt="Fosbil Logo with text">
+        </figure>
     <p>
         Fosbil is a comprehensive <b>library management software</b> designed to streamline, automate, and optimize every aspect of library operations.
         Built for modern academic, institutional, and public libraries, Fosbil centralizes <i>cataloging, circulation, acquisitions, membership management, and
@@ -89,6 +94,22 @@
         Fosbil is not just a management tool — it is a complete digital ecosystem that transforms traditional libraries into smart, connected knowledge centers.
     </p>
         </section>
+
+    <section class="video-sec">
+        <figure>
+            <video width="auto" height="auto" controls muted loop autoplay poster="Images/library_2_1080.jpg" >
+                <source src="videos/LibraryIntro.mp4" type="video/mp4">
+                <source src="videos/LibraryIntro.mkv" type="video/mkv">
+                <source src="videos/LibraryIntro.mov" type="video/mov">
+                <source src="videos/LibraryIntro.webm" type="video/webm">
+                <source src="videos/LibraryIntro.wmv" type="video/wmv">
+                <track src="videos/libraryintro_en.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="videos/libraryintro_de.vtt" kind="subtitles" srclang="de" label="German">
+                <track default src="videos/libraryintro_hi.vtt" kind="subtitles" srclang="hi" label="Hindi">
+                Your Browser doesn't support this video
+            </video>
+        </figure>
+    </section>
 
     <section class="features-sec">
     <h2 id="why-choose-fosbil">Why Choose Fosbil?</h2>
@@ -177,48 +198,18 @@
     </map>
     </section>
 
-    <section class="future-of-library-sec">
-    <h2 id="future-of-lirary">Sign Up! To Experience the Future of Library Science</h2>
-    <p>Join the hundreds of institutions worldwide that have moved beyond paper logs and legacy systems. Enhance your service quality, ensure transparency,
-        and provide your community with the knowledge tools they deserve. Don't miss out!</p>
-             <label for="first-name">First Name</label>
-             <input type="text" id="first-name" name="first-name" placeholder="First Name">
-
-             <label for="email">Email</label>
-             <input type="email" id="email" name="email" placeholder="Email" required>
-
-            <button type="submit" value="Submit" formaction="thank-you.html" formmethod="post" style="width: 160px" tabindex="12">SEND IT!</button>
-    </section>
-
-    <section class="video-sec">
-    <h2>Ready to modernize your library?</h2>
-    <figure>
-        <video width="2160" height="1080" controls muted loop autoplay poster="Images/library_2_1080.jpg" >
-            <source src="videos/LibraryIntro.mp4" type="video/mp4">
-            <source src="videos/LibraryIntro.mkv" type="video/mkv">
-            <source src="videos/LibraryIntro.mov" type="video/mov">
-            <source src="videos/LibraryIntro.webm" type="video/webm">
-            <source src="videos/LibraryIntro.wmv" type="video/wmv">
-            <track src="videos/libraryintro_en.vtt" kind="subtitles" srclang="en" label="English">
-            <track src="videos/libraryintro_de.vtt" kind="subtitles" srclang="de" label="German">
-            <track default src="videos/libraryintro_hi.vtt" kind="subtitles" srclang="hi" label="Hindi">
-            Your Browser doesn't support this video
-        </video>
-        <figcaption> Watch our product tour video, to decide whether this is the right fit for your library or not ?</figcaption>
-        </figure>
-        </section>
-
     <section class="comparative-table-sec">
- <h2 id="comp-table">Comparative Analysis: Fosbil vs. Industry Leaders</h2>
+ <h2 id="comp-table">Comparative Analysis <br>Fosbil vs. Industry Leaders</h2>
+
     <figure>
 
         <table>
             <colgroup>
-                <col style="background-color:#E0D28D;">
-                <col style="background-color:#DBE3BC;">
-                <col style="background-color:#D2E3C8;">
-                <col style="background-color:#DBE3BC;">
-                <col style="background-color:#D2E3C8;">
+                <col style="background-color:#2C2C2C;">
+                <col style="background-color:#E69500;">
+                <col style="background-color:#544BDB;">
+                <col style="background-color:#544BDB;">
+                <col style="background-color:#544BDB;">
             </colgroup>
             <thead>
             <tr>
@@ -316,9 +307,22 @@
             </tfoot>
 
         </table>
-        <figcaption> The comparison is based on 2025 data </figcaption>
+        <figcaption> *The comparison is based on 2025 data </figcaption>
     </figure>
 </section>
+
+    <section class="future-of-library-sec">
+        <h2 id="future-of-lirary">Sign Up! To Experience the Future of Library Science</h2>
+        <p>Join the hundreds of institutions worldwide that have moved beyond paper logs and legacy systems. Enhance your service quality, ensure transparency,
+            and provide your community with the knowledge tools they deserve. Don't miss out!</p>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <button type="submit" value="Submit" formaction="thank-you.html" formmethod="post" style="width: 160px" tabindex="12">SEND IT!</button>
+    </section>
 
     <section class="testimonials-sec">
     <h2>Testimonials</h2>
