@@ -30,40 +30,20 @@
     </header>
 
 <main class="main">
-     <section class="hero-sec">
-    <figure>
-    <!-- This is the hero section's images. Put h1 on the hero image slider-->
-        <picture>
-            <source media="(min-width: 1080px)" srcset="Images/library_1_1080.jpg">
-            <source media="(min-width: 720px)" srcset="Images/library_1_720.jpg">
-            <source media="(min-width: 480px)" srcset="Images/library_1_480.jpg">
-            <!-- Fall back image for old browser-->
-            <img src="Images/library_1.jpg" alt="Cornelius Library" title="Cornelius Library">
-        </picture>
 
-        <picture>
-            <source media="(min-width: 1080px)" srcset="Images/library_2_1080.jpg">
-            <source media="(min-width: 720px)" srcset="Images/library_2_720.jpg">
-            <source media="(min-width: 480px)" srcset="Images/library_2_480.jpg">
-            <!-- Fall back image for old browser-->
-            <img src="Images/library_2.jpg" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
-        </picture>
-
-        <picture>
-            <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
-            <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
-            <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg">
-            <!-- Fall back image for old browser-->
-            <img src="Images/library_3.jpeg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
-        </picture>
-
-        <picture>
-            <source media="(min-width: 1080px)" srcset="Images/library_4_1080.jpg">
-            <source media="(min-width: 720px)" srcset="Images/library_4_720.jpg">
-            <source media="(min-width: 480px)" srcset="Images/library_4_480.jpg">
-            <!-- Fall back image for old browser-->
-            <img src="Images/library_4.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
-        </picture>
+    <section class="video-sec">
+        <figure>
+            <video width="auto" height="auto" muted loop autoplay poster="Images/library_2_1080.jpg" >
+                <source src="videos/LibraryIntro.mp4" type="video/mp4">
+                <source src="videos/LibraryIntro.mkv" type="video/mkv">
+                <source src="videos/LibraryIntro.mov" type="video/mov">
+                <source src="videos/LibraryIntro.webm" type="video/webm">
+                <source src="videos/LibraryIntro.wmv" type="video/wmv">
+                <track src="videos/libraryintro_en.vtt" kind="subtitles" srclang="en" label="English">
+                <track src="videos/libraryintro_de.vtt" kind="subtitles" srclang="de" label="German">
+                <track src="videos/libraryintro_hi.vtt" kind="subtitles" srclang="hi" label="Hindi">
+                Your Browser doesn't support this video
+            </video>
         </figure>
     </section>
 
@@ -95,19 +75,129 @@
     </p>
         </section>
 
-    <section class="video-sec">
-        <figure>
-            <video width="auto" height="auto" controls muted loop autoplay poster="Images/library_2_1080.jpg" >
-                <source src="videos/LibraryIntro.mp4" type="video/mp4">
-                <source src="videos/LibraryIntro.mkv" type="video/mkv">
-                <source src="videos/LibraryIntro.mov" type="video/mov">
-                <source src="videos/LibraryIntro.webm" type="video/webm">
-                <source src="videos/LibraryIntro.wmv" type="video/wmv">
-                <track src="videos/libraryintro_en.vtt" kind="subtitles" srclang="en" label="English">
-                <track src="videos/libraryintro_de.vtt" kind="subtitles" srclang="de" label="German">
-                <track default src="videos/libraryintro_hi.vtt" kind="subtitles" srclang="hi" label="Hindi">
-                Your Browser doesn't support this video
-            </video>
+    <section class="hero-sec">
+        <figure class="hero-sec-img-gallery">
+            <!-- This is the hero section's images. Put h1 on the hero image slider-->
+            <picture class="hero-sec-img-1">
+                <!--  <source media="(min-width: 1080px)" srcset="Images/library_1_1080.jpg">
+                 <source media="(min-width: 720px)" srcset="Images/library_1_720.jpg">
+                 <source media="(min-width: 480px)" srcset="Images/library_1_480.jpg"> -->
+                 <!-- Fall back image for old browser-->
+                <img src="Images/library_1_480.jpg" alt="Cornelius Library" title="Cornelius Library">
+            </picture>
+
+            <picture class="hero-sec-img-2">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_2_1080.jpg">
+                <source media="(min-width: 720px)" srcset="Images/library_2_720.jpg">
+                <source media="(min-width: 480px)" srcset="Images/library_2_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_2_480.jpg" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
+            </picture>
+
+            <picture class="hero-sec-img-5">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library-4-260.jpg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-3">
+               <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_3_480.jpeg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-4">
+               <!-- <source media="(min-width: 1080px)" srcset="Images/library_4_1080.jpg">
+                <source media="(min-width: 720px)" srcset="Images/library_4_720.jpg">
+                <source media="(min-width: 480px)" srcset="Images/library_4_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_4_480.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
+            </picture>
+
+            <picture class="hero-sec-img-4">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library-4-260.jpg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-6">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library-4-260.jpg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-3">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_3_480.jpeg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-2">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_2_1080.jpg">
+                <source media="(min-width: 720px)" srcset="Images/library_2_720.jpg">
+                <source media="(min-width: 480px)" srcset="Images/library_2_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_2_480.jpg" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
+            </picture>
+
+            <picture class="hero-sec-img-4">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_4_1080.jpg">
+                 <source media="(min-width: 720px)" srcset="Images/library_4_720.jpg">
+                 <source media="(min-width: 480px)" srcset="Images/library_4_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_4_480.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
+            </picture>
+
+            <picture class="hero-sec-img-1">
+                <!--  <source media="(min-width: 1080px)" srcset="Images/library_1_1080.jpg">
+                 <source media="(min-width: 720px)" srcset="Images/library_1_720.jpg">
+                 <source media="(min-width: 480px)" srcset="Images/library_1_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_1_480.jpg" alt="Cornelius Library" title="Cornelius Library">
+            </picture>
+
+            <picture class="hero-sec-img-3">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_3_480.jpeg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
+            <picture class="hero-sec-img-4">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_4_1080.jpg">
+                 <source media="(min-width: 720px)" srcset="Images/library_4_720.jpg">
+                 <source media="(min-width: 480px)" srcset="Images/library_4_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_4_480.jpg" alt="Warren and Warren Book Shop" title="Warren and Warren Book Shop">
+            </picture>
+
+            <picture class="hero-sec-img-2">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_2_1080.jpg">
+                <source media="(min-width: 720px)" srcset="Images/library_2_720.jpg">
+                <source media="(min-width: 480px)" srcset="Images/library_2_480.jpg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library_2_480.jpg" alt="Sir Aurther Bishop Library" title="Sir Aurther Bishop Library">
+            </picture>
+
+            <picture class="hero-sec-img-6">
+                <!-- <source media="(min-width: 1080px)" srcset="Images/library_3_1080.jpeg">
+                 <source media="(min-width: 720px)" srcset="Images/library_3_720.jpeg">
+                 <source media="(min-width: 480px)" srcset="Images/library_3_480.jpeg"> -->
+                <!-- Fall back image for old browser-->
+                <img src="Images/library-4-260.jpg"  alt="Sir Charlie Munger State Library" title="Sir Charlie Munger State Library">
+            </picture>
+
         </figure>
     </section>
 
@@ -315,8 +405,6 @@
         <h2 id="future-of-lirary">Sign Up! To Experience the Future of Library Science</h2>
         <p>Join the hundreds of institutions worldwide that have moved beyond paper logs and legacy systems. Enhance your service quality, ensure transparency,
             and provide your community with the knowledge tools they deserve. Don't miss out!</p>
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" placeholder="First Name">
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Email" required>
