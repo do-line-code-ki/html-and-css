@@ -1,3 +1,15 @@
+p{
+font-family:Verdana;
+font-size: 20px;
+line-height: 35px;
+}
+
+ul,ol{
+font-family:Verdana;
+font-size: 15px;
+line-height: 35px;
+}
+
 .grid{
 display: grid;
 grid-template-rows: repeat(12,auto);
@@ -81,6 +93,11 @@ flex-wrap: wrap;
   gap: 20px;
 }
 
+.features-sec-and-features-wheel img{
+align-self:center;
+justify-self:center;
+}
+
 .future-of-library-sec{
 background-color:#544BDB;
 color:white;
@@ -151,7 +168,11 @@ section {
 .hero-sec{
 padding: 10px 0;
 margin:0;
-background-color: orange;
+background-color: black;
+}
+
+.hero-sec-img-gallery img{
+border: 2px solid orange;
 
 }
 
@@ -207,6 +228,27 @@ transition: ease 0.6s;
   height: 100%;
   object-fit: cover;
 }
+
 label{
 display:none;
+}
+
+.testimonial-text{
+display:inline-block;
+font-size: 50px;
+text-decoration:underline;
+text-decoration-color:orange;
+}
+
+.testimonials-heading{
+display:block;
+margin:0;
+padding:0;
+}
+
+.testimonial-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-self: center;
 }
