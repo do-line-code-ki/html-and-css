@@ -136,13 +136,13 @@ a:visited {
 color: orange;
 }
 
-/* Background Images for different sections*/
+/* Background Images for different sections*
 
 .main{
-background-image: url("images/new-bg-vertical-resized.jpg");
+background-image: url("images/new-bg-vertical-resized.jpg") no repeat center center fixed;;
 }
 
-/* background images ends here */
+background images ends here */
 
 th,td {
   /* The black border */
@@ -251,4 +251,50 @@ padding:0;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-self: center;
+}
+
+svg{
+fill: white;
+vertical-align: middle;
+
+}
+
+h2 svg{
+fill: #544BDB;
+}
+
+h3 svg{
+fill:orange;
+}
+
+.future-lib-sec{
+vertical-align: top;
+fill: orange;
+}
+
+.testimonials-h2-container{
+display:flex;
+flex-wrap:wrap;
+}
+
+.testimonial-svg-icon{
+fill:orange;
+}
+
+.testimonial-card{
+display:grid;
+grid-template-columns: 3fr 1fr;
+gap: 4rem;
+}
+
+.reviewer-image{
+  border: 4px solid orange;
+  width: 250px;
+  height: 250px;       /* force equal width and height */
+  object-fit: cover;   /* crops the image to fit */
+  border-radius: 50%;  /* makes it a circle */
+  }
+
+.reviewer-name{
+text-align: center;
 }
