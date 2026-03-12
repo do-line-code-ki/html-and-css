@@ -232,7 +232,7 @@ position: absolute;
 top: 20rem;
 text-align: center;
 color: white;
-font-family: calibri;
+font-family: 'Bebas Neue', sans-serif;
 font-size: 5rem;
 padding: 2rem 2rem;
 }
@@ -352,8 +352,7 @@ address, nav {
 
 .welcome-sec, .hero-sec , .features-sec ,
 .features-sec-and-features-wheel , .comparative-table-sec ,
-.future-of-library-sec , .testimonials-sec {
-
-margin: 5rem 0rem 4rem 0rem;
-
+.future-of-library-sec ,
+.testimonials-sec {
+           margin: 5rem 0rem 4rem 0rem;
 }
