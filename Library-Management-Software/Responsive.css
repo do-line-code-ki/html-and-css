@@ -1,0 +1,623 @@
+/* ============================================================
+   RESPONSIVE STYLESHEET — Fosbil Homepage
+   Link AFTER libstyle-homepage.css:
+   <link rel="stylesheet" href="Responsive.css">
+   ============================================================ */
+
+
+/* ============================================================
+   BASE FIX — Centres .headingh1 over the video at ALL sizes.
+   Add this to your main CSS (libstyle-homepage.css) if preferred.
+   ============================================================ */
+
+.video-sec {
+  position: relative;  /* anchor for the absolutely placed heading */
+  margin: 0;
+  padding: 0;
+}
+
+.video-sec figure {
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 0;       /* removes phantom gap under the video */
+}
+
+.headingh1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* true centre on both axes */
+  text-align: center;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
+  pointer-events: none;
+  z-index: 2;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9),
+               0   0   40px  rgba(0, 0, 0, 0.7);
+}
+
+.headingh1 h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+/* ============================================================
+   LARGE DESKTOPS  (1400px and above)
+   ============================================================ */
+@media (min-width: 1400px) {
+
+  .nav .logo {
+    padding: 0 0 0 9rem;
+  }
+
+  .nav .nav-item {
+    padding: 0 22rem 0 0;
+  }
+
+  .headingh1 {
+    font-size: 6rem;
+  }
+}
+
+
+/* ============================================================
+   SMALL DESKTOPS / LARGE TABLETS LANDSCAPE  (1025px – 1399px)
+   ============================================================ */
+@media (max-width: 1399px) {
+
+  .nav .nav-item {
+    padding: 0 6rem 0 0;
+  }
+
+  .nav .logo {
+    padding: 0 0 0 4rem;
+  }
+
+  .headingh1 {
+    font-size: 3.8rem;
+  }
+
+  /* Features wheel image — scale it down */
+  .features-sec-and-features-wheel img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ============================================================
+   TABLETS  (769px – 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* ── Nav ── */
+  .nav .logo {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+  }
+
+  .nav .nav-item {
+    padding: 0 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
+
+  .nav-item a {
+    font-size: 0.9rem;
+    padding: 0 6px;
+  }
+
+  /* ── Hero heading ── */
+  .headingh1 {
+    font-size: 2.8rem;
+  }
+
+  /* ── Welcome section logo float ── */
+  #welcome-sec-logo {
+    width: 180px;
+  }
+
+  /* ── Features grid → single column ── */
+  .features-sec-1 {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Features + wheel → stack vertically ── */
+  .features-sec-and-features-wheel {
+    grid-template-columns: 1fr;
+  }
+
+  .features-sec-and-features-wheel img {
+    width: 80%;
+    max-width: 600px;
+    justify-self: center;
+  }
+
+  /* ── Comparative table section ── */
+  .comparative-table-sec {
+    grid-template-columns: 1fr;
+  }
+
+  .comparative-table-sec h2 {
+    font-size: 44px;
+    margin-bottom: 1rem;
+  }
+
+  /* Make table horizontally scrollable */
+  .comparative-table-sec figure {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+  th, td {
+    padding: 16px 12px;
+    font-size: 0.85rem;
+  }
+
+  /* ── Testimonial cards → single column ── */
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .reviewer-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    gap: 5rem;
+    padding: 100px 60px 60px;
+  }
+
+  /* ── Scroll-to-top button ── */
+  aside {
+    left: 88%;
+  }
+}
+
+
+/* ============================================================
+   TABLETS PORTRAIT  (481px – 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  html {
+    scroll-padding-top: 90px;
+  }
+
+  /* ── Header ── */
+  .header {
+    border-bottom-width: 6px;
+  }
+
+  /* ── Nav: stack logo above links ── */
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    gap: 0.4rem;
+  }
+
+  .nav .logo {
+    padding: 0.4rem 0;
+  }
+
+  .nav .logo img {
+    height: 60px;
+  }
+
+  .nav .nav-item {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    width: 100%;
+  }
+
+  .nav-item a {
+    font-size: 0.82rem;
+    padding: 2px 5px;
+  }
+
+  /* ── Hero video heading ── */
+  .headingh1 {
+    font-size: 2rem;
+  }
+
+  .headingh1 h1 {
+    font-size: inherit;
+    line-height: 1.2;
+  }
+
+  /* ── Welcome section ── */
+  #welcome-sec-logo {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 140px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  /* ── Hero image gallery: 2 images per row ── */
+  .hero-sec-img-gallery {
+    justify-content: center;
+  }
+
+  .hero-sec-img-gallery picture {
+    width: calc(50% - 5px);
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  /* ── Features: single column ── */
+  .features-sec-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .features-sec-and-features-wheel {
+    grid-template-columns: 1fr;
+  }
+
+  .features-sec-and-features-wheel img {
+    width: 90%;
+    max-width: 480px;
+    justify-self: center;
+  }
+
+  /* ── Comparative table ── */
+  .comparative-table-sec {
+    grid-template-columns: 1fr;
+  }
+
+  .comparative-table-sec h2 {
+    font-size: 32px;
+  }
+
+  .comparative-table-sec figure {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  th, td {
+    padding: 12px 8px;
+    font-size: 0.78rem;
+  }
+
+  /* ── Future of library signup section ── */
+  .future-of-library-sec {
+    padding: 1.5rem;
+  }
+
+  .future-of-library-sec input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .future-of-library-sec button {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* ── Testimonials ── */
+  .testimonial-text {
+    font-size: 32px;
+  }
+
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .reviewer-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+
+  .reviewer-name {
+    text-align: center;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 100px 30px 50px;
+  }
+
+  .footer-nav .nav-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0;
+  }
+
+  /* ── Sections spacing ── */
+  .welcome-sec,
+  .hero-sec,
+  .features-sec,
+  .features-sec-and-features-wheel,
+  .comparative-table-sec,
+  .future-of-library-sec,
+  .testimonials-sec {
+    margin: 2.5rem 0 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  /* ── Scroll-to-top button ── */
+  aside {
+    left: 80%;
+    bottom: 2%;
+  }
+
+  aside svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE LARGE  (376px – 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  html {
+    scroll-padding-top: 70px;
+  }
+
+  /* ── Nav ── */
+  .nav {
+    padding: 0.3rem 0.8rem;
+    gap: 0.3rem;
+  }
+
+  .nav .logo img {
+    height: 50px;
+  }
+
+  .nav-item a {
+    font-size: 0.75rem;
+    padding: 1px 4px;
+  }
+
+  .nav-item a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* ── Hero heading ── */
+  .headingh1 {
+    font-size: 1.5rem;
+  }
+
+  /* ── Typography ── */
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  ul, ol {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  figcaption {
+    font-size: 14px;
+  }
+
+  /* ── Welcome logo ── */
+  #welcome-sec-logo {
+    width: 110px;
+  }
+
+  /* ── Hero gallery: 1 image per row on small mobiles ── */
+  .hero-sec-img-gallery picture {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* ── Feature articles ── */
+  article {
+    margin: 6px;
+    padding: 12px;
+    box-shadow: 8px 8px gray;
+  }
+
+  /* ── Comparative table ── */
+  .comparative-table-sec h2 {
+    font-size: 26px;
+  }
+
+  th, td {
+    padding: 8px 6px;
+    font-size: 0.7rem;
+  }
+
+  /* ── Future section ── */
+  .future-of-library-sec h2 {
+    font-size: 26px;
+  }
+
+  /* ── Testimonials ── */
+  .testimonial-text {
+    font-size: 24px;
+  }
+
+  .testimonials-h2-container h2 {
+    font-size: 28px;
+  }
+
+  .reviewer-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    padding: 80px 20px 40px;
+    gap: 2rem;
+  }
+
+  .footer address {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  .footer-nav .nav-item a {
+    font-size: 0.82rem;
+  }
+
+  /* ── Copyright ── */
+  .copyright {
+    font-size: 0.78rem;
+    padding: 1rem;
+  }
+
+  /* ── Sections ── */
+  .welcome-sec,
+  .hero-sec,
+  .features-sec,
+  .features-sec-and-features-wheel,
+  .comparative-table-sec,
+  .future-of-library-sec,
+  .testimonials-sec {
+    margin: 1.5rem 0;
+  }
+
+  section {
+    padding: 0.8rem;
+  }
+
+  /* ── Scroll-to-top ── */
+  aside {
+    left: 74%;
+    bottom: 2%;
+  }
+
+  aside svg {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE SMALL  (375px and below)
+   ============================================================ */
+@media (max-width: 375px) {
+
+  .nav .logo img {
+    height: 44px;
+  }
+
+  .nav-item a {
+    font-size: 0.68rem;
+    padding: 1px 3px;
+  }
+
+  .nav-item a svg {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  }
+
+  .headingh1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .testimonial-text {
+    font-size: 20px;
+  }
+
+  .reviewer-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  th, td {
+    padding: 6px 4px;
+    font-size: 0.62rem;
+  }
+
+  .footer {
+    padding: 70px 14px 30px;
+    gap: 1.5rem;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+
+  aside {
+    left: 68%;
+  }
+
+  aside svg {
+    width: 48px;
+    height: 48px;
+  }
+}
